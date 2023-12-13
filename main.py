@@ -124,7 +124,6 @@ def add():
     form = MovieAddForm()
     if form.validate_on_submit():
         #Search the movie in the API
-        api_key, api_token
         url = f"https://api.themoviedb.org/3/search/movie?query={request.form['title']}&include_adult=false&language=en-US&page=1"
         headers = {
             "accept": "application/json",
